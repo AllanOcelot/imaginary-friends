@@ -4,6 +4,7 @@
   "description": "Imaginary Friends node / express api server",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./server.js --exec babel-node -e js",
     "test": "test"
   },
   "repository": {
@@ -11,9 +12,12 @@
     "url": "git+https://github.com/AllanOcelot/imaginary-friends.git"
   },
   "dependencies": {
+    "body-parser": "~1.0.1",
+    "bson": "^3.0.2",
     "express": "~4.0.0",
-    "mongoose": "~3.6.13",
-    "body-parser": "~1.0.1"
+    "lodash": "^4.17.10",
+    "mongodb": "^3.1.1",
+    "mongoose": "^3.6.20"
   },
   "keywords": [
     "npm",
@@ -27,5 +31,11 @@
   "bugs": {
     "url": "https://github.com/AllanOcelot/imaginary-friends/issues"
   },
-  "homepage": "https://github.com/AllanOcelot/imaginary-friends#readme"
+  "homepage": "https://github.com/AllanOcelot/imaginary-friends#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.18.3"
+  }
 }
